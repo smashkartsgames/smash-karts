@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Smash Karts – Play Free Online Multiplayer Kart Battle</title>
   <meta name="description" content="Play Smash Karts free in your browser. Drive fast, grab weapons, and smash opponents in 3-minute multiplayer kart battles. No download needed." />
+  <link rel="preload" as="image" href="images/smash-karts.webp" fetchpriority="high" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" /></noscript>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
   <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <noscript><link rel="stylesheet" href="styles.css" /></noscript>
   <link rel="canonical" href="https://smashkartsgames.github.io/" />
@@ -22,7 +23,6 @@
   <meta name="twitter:title" content="Smash Karts – Play Free Online Multiplayer Kart Battle" />
   <meta name="twitter:description" content="Play Smash Karts free in your browser. Drive fast, grab weapons, and smash opponents in 3-minute multiplayer kart battles. No download needed." />
   <meta name="twitter:image" content="https://smashkartsgames.github.io/images/og-image.webp" />
-  <link rel="preload" as="image" href="images/smash-karts.webp" />
   <link rel="icon" href="favicon.ico" sizes="any" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   <script type="application/ld+json">
@@ -425,6 +425,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script defer src="js/main.js"></script>
 </body>
 </html>
