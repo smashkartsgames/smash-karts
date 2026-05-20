@@ -18,7 +18,7 @@ document.querySelectorAll('.yt-facade').forEach(facade => {
   const load = () => {
     const id = facade.dataset.videoId;
     const iframe = document.createElement('iframe');
-    iframe.src = `https://www.youtube.com/embed/${id}?rel=0`;
+    iframe.src = `https://www.youtube.com/embed/${id}?autoplay=1&rel=0`;
     iframe.title = facade.querySelector('img')?.alt || 'YouTube video';
     iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
     iframe.referrerPolicy = 'strict-origin-when-cross-origin';
