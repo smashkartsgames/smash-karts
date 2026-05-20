@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /about/
+Disallow: /privacy-policy/
+Disallow: /terms-of-service/
+
+Sitemap: https://smashkartsgames.github.io/sitemap.xml
