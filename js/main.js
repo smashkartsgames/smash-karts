@@ -13,16 +13,21 @@ document.querySelectorAll('.faq-list').forEach(list => {
   });
 });
 
-// YouTube lazy load
-const ytObserver = new IntersectionObserver((entries, obs) => {
-  entries.forEach(entry => {
-    if (!entry.isIntersecting) return;
-    const iframe = entry.target.querySelector('iframe[data-src]');
-    if (iframe) { iframe.src = iframe.dataset.src; }
-    obs.unobserve(entry.target);
-  });
-}, { rootMargin: '200px' });
-document.querySelectorAll('.yt-wrap').forEach(el => ytObserver.observe(el));
+// YouTube facade: load iframe only on click
+document.querySelectorAll('.yt-facade').forEach(facade => {
+  const load = () => {
+    const id = facade.dataset.videoId;
+    const iframe = document.createElement('iframe');
+    iframe.src = `https://www.youtube.com/embed/${id}?autoplay=1`;
+    iframe.title = facade.querySelector('img')?.alt || 'YouTube video';
+    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+    iframe.allowFullscreen = true;
+    iframe.style.cssText = 'width:100%;height:100%;border:0;display:block;';
+    facade.replaceWith(iframe);
+  };
+  facade.querySelector('.yt-play').addEventListener('click', load);
+});
 
 // Game play button (preview → loading → playing)
 document.querySelectorAll('.game-play-btn').forEach(btn => {
