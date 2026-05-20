@@ -903,14 +903,14 @@ section {
 
 .yt-wrap iframe { width: 100%; height: 100%; border: 0; display: block; }
 
-.yt-facade { position: relative; width: 100%; height: 100%; }
+.yt-facade { position: absolute; inset: 0; }
 .yt-facade img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .yt-play {
   position: absolute; inset: 0;
   display: flex; align-items: center; justify-content: center;
-  background: transparent; border: 0; cursor: pointer; padding: 0;
-  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.25); border: 0; cursor: pointer; padding: 0;
 }
+.yt-play:hover { background: rgba(0,0,0,0.15); }
 .yt-play svg path:first-child { transition: fill 0.15s; }
 .yt-facade:hover .yt-play svg path:first-child { fill: #cc0000; }
 
