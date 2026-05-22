@@ -110,7 +110,7 @@
             <span class="sep">/</span>
             <span>Smash Karts Unblocked</span>
           </nav>
-          <div class="embed-frame" id="play" data-src="https://smashkarts.io/" data-title="Smash Karts Unblocked – Play Free Online">
+          <div class="embed-frame" id="play" data-src="https://ghp1tallteam.github.io/" data-title="Smash Karts Unblocked – Play Free Online">
             <div class="game-cover">
               <div class="game-cover-bg" style="background-image:url('../images/smash-karts.webp')"></div>
               <div class="game-cover-overlay"></div>
@@ -208,55 +208,35 @@
       </div>
     </section>
 
-    <!-- ============ CONTROLS ============ -->
+    <!-- ============ TROUBLESHOOTING ============ -->
     <section>
       <div class="container">
         <div class="section-head">
-          <span class="section-label">Controls</span>
-          <h2>Smash Karts Controls – Quick Reference</h2>
+          <span class="section-label">Troubleshooting</span>
+          <h2>Game Not Loading? Try These Steps</h2>
         </div>
 
-        <div class="controls-grid">
-          <div class="control-row">
-            <span class="keycap-group">
-              <span class="keycap">W</span><span class="or">/</span><span class="keycap">↑</span>
-            </span>
-            <span class="label">Accelerate</span>
-          </div>
-          <div class="control-row">
-            <span class="keycap-group">
-              <span class="keycap">S</span><span class="or">/</span><span class="keycap">↓</span>
-            </span>
-            <span class="label">Brake / reverse</span>
-          </div>
-          <div class="control-row">
-            <span class="keycap-group">
-              <span class="keycap">A</span><span class="or">/</span><span class="keycap">←</span>
-            </span>
-            <span class="label">Turn left</span>
-          </div>
-          <div class="control-row">
-            <span class="keycap-group">
-              <span class="keycap">D</span><span class="or">/</span><span class="keycap">→</span>
-            </span>
-            <span class="label">Turn right</span>
-          </div>
-          <div class="control-row">
-            <span class="keycap-group"><span class="keycap" style="min-width:120px">Spacebar</span></span>
-            <span class="label">Fire weapon</span>
-          </div>
-          <div class="control-row">
-            <span class="keycap-group"><span class="keycap" style="min-width:64px">Shift</span></span>
-            <span class="label">Drift</span>
-          </div>
-          <div class="control-row">
-            <span class="keycap-group"><span class="keycap">C</span></span>
-            <span class="label">Look behind</span>
-          </div>
-          <div class="control-row">
-            <span class="keycap-group"><span class="keycap" style="min-width:64px">Enter</span></span>
-            <span class="label">Open chat</span>
-          </div>
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary><span class="faq-icon"></span><span>Step 1 — Hard refresh the page</span></summary>
+            <div class="faq-body">Press <strong>Ctrl + Shift + R</strong> (Windows / ChromeOS) or <strong>Cmd + Shift + R</strong> (Mac) to force a full reload and clear any cached assets. A regular refresh won't always pick up a fresh copy of the game files.</div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="faq-icon"></span><span>Step 2 — Check hardware acceleration is on</span></summary>
+            <div class="faq-body">Smash Karts runs on WebGL, which needs hardware acceleration. On a school Chromebook, some device policies disable it. Go to <strong>chrome://settings/system</strong> and make sure "Use hardware acceleration when available" is turned on, then relaunch Chrome.</div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="faq-icon"></span><span>Step 3 — Game loads but you can't join a match</span></summary>
+            <div class="faq-body">This is almost always a <strong>WebSocket block</strong>. Smash Karts uses WebSocket connections (wss://) to sync players in real time. Some school firewalls block this protocol even when the game page itself loads fine. If you can see the main menu but get stuck on "Connecting…", your network is filtering WebSocket traffic — not the game URL. Switching to a mobile hotspot will bypass it.</div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="faq-icon"></span><span>Step 4 — Try a different network</span></summary>
+            <div class="faq-body">If the steps above don't help, the block is at the network level — not something on your device. Connecting your Chromebook to a phone's mobile hotspot bypasses the school's network filter entirely. The game should load and connect normally on mobile data.</div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="faq-icon"></span><span>Step 5 — Servers might be down</span></summary>
+            <div class="faq-body">Smash Karts occasionally has server outages — users have reported getting stuck at the loading screen across Chrome, Edge, and other browsers all at once, with no school filter involved. If nothing else explains the issue, wait 10–15 minutes and try again. It usually clears on its own.</div>
+          </details>
         </div>
       </div>
     </section>
@@ -266,25 +246,41 @@
       <div class="container">
         <div class="section-head">
           <span class="section-label">FAQ</span>
-          <h2>Unblocked FAQ</h2>
+          <h2>School &amp; Unblocked FAQ</h2>
         </div>
 
         <div class="faq-list">
           <details class="faq-item">
             <summary><span class="faq-icon"></span><span>Can I play Smash Karts unblocked at school?</span></summary>
-            <div class="faq-body">In most cases, yes. Smash Karts runs entirely in the browser and doesn't require a download, so it isn't blocked by typical school content filters. If your school specifically blocks gaming domains, the video above walks through the workarounds that don't violate device policies.</div>
+            <div class="faq-body">In most cases, yes. Smash Karts runs entirely in the browser with no download, so it doesn't trigger the install-based blocks that many school device policies enforce. Whether the game URL itself is blocked depends on which content filter your school uses and how it's configured — it's a district-level policy, not a universal rule.</div>
           </details>
           <details class="faq-item">
-            <summary><span class="faq-icon"></span><span>Does Smash Karts work on Chromebook?</span></summary>
-            <div class="faq-body">Yes. Chromebooks run Chrome, and Chrome supports WebGL — which is everything Smash Karts needs. No extension, no Linux mode, no developer toggles required. Open the tab and play.</div>
+            <summary><span class="faq-icon"></span><span>Does Smash Karts work on a school Chromebook?</span></summary>
+            <div class="faq-body">Yes, as long as WebGL and hardware acceleration are enabled. Chromebooks run Chrome natively, and Chrome supports everything Smash Karts needs — no Linux mode, no developer flags, no extensions. If the game won't render, check that hardware acceleration is on in <strong>chrome://settings/system</strong>.</div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="faq-icon"></span><span>My school uses GoGuardian — will this work?</span></summary>
+            <div class="faq-body">GoGuardian is an extension-based filter that blocks sites by category. Whether Smash Karts is blocked depends entirely on how your school has configured it — not all schools using GoGuardian block the same categories. GoGuardian filters the top-level URL in your browser tab; its behaviour with embedded game content can vary. If it's blocked for you, the mobile hotspot workaround in Step 4 above is the most reliable fix.</div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="faq-icon"></span><span>My school uses Lightspeed — is it different from GoGuardian?</span></summary>
+            <div class="faq-body">Lightspeed also uses a browser extension (SmartAgent) and filters by domain category, similar to GoGuardian. Some school districts switched from GoGuardian to Lightspeed in 2025–2026. The practical result for gaming sites is roughly the same: category-based blocking that depends on your district's settings. Lightspeed also has screen monitoring features, so teachers may be able to see active tabs.</div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="faq-icon"></span><span>Will my teacher be able to see I'm playing?</span></summary>
+            <div class="faq-body">If your school uses GoGuardian Classroom or Lightspeed's monitoring features, yes — teachers can see which tab is active, including the page title and URL. Even if a game isn't blocked, it can still appear on the teacher's dashboard. Playing during free periods or lunch is a different story, but during class it's worth being aware of.</div>
           </details>
           <details class="faq-item">
             <summary><span class="faq-icon"></span><span>Is Smash Karts Unblocked free?</span></summary>
-            <div class="faq-body">100% free. There's no paid version of Smash Karts — "unblocked" just means hosted on a domain that isn't blocked at school. The game itself is identical to the main release.</div>
+            <div class="faq-body">100% free. There's no paid version — "unblocked" just refers to accessing the game through a domain that isn't filtered by your school. The game itself is identical to the main release, including all game modes, cosmetics, and multiplayer.</div>
           </details>
           <details class="faq-item">
-            <summary><span class="faq-icon"></span><span>Why is Smash Karts blocked at some schools?</span></summary>
-            <div class="faq-body">Many schools use content filters that automatically block any domain categorized as "games" or "entertainment." This is usually a blanket policy, not a specific block on Smash Karts — and it changes based on which filter your district uses (GoGuardian, Lightspeed, Securly, etc.).</div>
+            <summary><span class="faq-icon"></span><span>Why is Smash Karts blocked at some schools but not others?</span></summary>
+            <div class="faq-body">School content filters work by assigning websites to categories (Games, Entertainment, Social Media, etc.) and then blocking whichever categories the district has chosen to restrict. Whether Smash Karts is blocked depends on: which filter software your school uses, how it has categorised the domain, and what your IT team has set as policy. Two schools in the same state can have completely different outcomes.</div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="faq-icon"></span><span>Can I play Smash Karts offline at school?</span></summary>
+            <div class="faq-body">No. Smash Karts is an online-only multiplayer game — it needs a live internet connection to match you with other players. There's no offline or single-player mode. If your network blocks the game and you don't have mobile data, there's no workaround that keeps you on the school network.</div>
           </details>
         </div>
       </div>
